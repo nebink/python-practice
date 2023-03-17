@@ -1,0 +1,18 @@
+# Define a function to check the total marks and grade
+def check_total_marks(exam_type, total_marks):
+    if exam_type == "Final-exam" and total_marks >= 90:
+        return True
+    elif 89 <= total_marks <= 100:
+        return True
+    else:
+        return False
+
+# Prompt the user to enter the examination type and total marks
+exam_type = input("Enter the examination type: ")
+total_marks = int(input("Enter the total marks: "))
+
+# Check the total marks and grade and display the result
+if check_total_marks(exam_type, total_marks):
+    print("The student gets an A+ grade")
+else:
+    print("The student does not get an A+ grade")
