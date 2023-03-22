@@ -1,0 +1,13 @@
+# Prompt the user to enter two integers
+a = int(input("Enter the first integer: "))
+b = int(input("Enter the second integer: "))
+
+# Compute the sum of the two integers
+sum = a + b
+
+# Check if the two integers are equal
+if a == b:
+    sum *= 3
+
+# Display the result
+print("The sum is", sum)
